@@ -6,9 +6,7 @@
 }
 
 body {
-    /* background: radial-gradient(circle, rgba(51,51,51,1)
-    0% rgba(29,19,19,1) 100%); */
-    background: lightgrey;
+    background: black;
 }
 
 .container {
@@ -50,6 +48,6 @@ body {
 
 .box {
     padding: 3rem;
-    background: lightgrey;
+    background: black;
     
 }
