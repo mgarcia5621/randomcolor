@@ -23,4 +23,11 @@ function start() {
 
 colorBtn.addEventListener('click', function(){
     colorBtn.innerText = 'STOP'
+    if(running) {
+        running = false
+        colorBtn.innerText = 'CHANGE COLOR'
+    } else {
+        running = true
+        start()
+    }
 })
