@@ -1,4 +1,5 @@
 const colorBtn = document.querySelector('#btn-1')
+const boxContainer = document.querySelector('.box-container')
 const boxes = document.querySelectorAll('.box')
 
 let running = false
@@ -14,9 +15,11 @@ function getRandomColor() {
 
 function start() {
     if(running) {
-        boxes.forEach(color => {
-            color.style.background = getRandomColor()
-        })
+        const newBox = document.createElement("div")
+        newBox.classList = "box"
+        newBox.style.background = getRandomColor()
+        boxContainer.appendChild(newBox)
+
         setTimeout(start, 500)
     }
 }
