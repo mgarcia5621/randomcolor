@@ -17,7 +17,7 @@ function start() {
         boxes.forEach(color => {
             color.style.background = getRandomColor()
         })
-        setTimeout(start, 500)
+        setTimeout(start, 300)
     }
 }
 
